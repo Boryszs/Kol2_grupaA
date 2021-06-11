@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let item of items$" class="col-md-4 col-sm-6 col-12" style="padding: 5px; min-width: 20rem; height:10%;">
+                <orders-item-dm [id]="item.id" [title]="item.title" [price]="item.price" [image]="item.image" [text]="item.text">
+            </orders-item-dm>
+        </div>
+    </div>
+</div>
